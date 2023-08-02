@@ -1832,6 +1832,32 @@ video {
     .lg\:max-w-md {
         max-width: 28rem
     }
+
+    .circle {
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(to top left, #fff, #ea9e9e);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0 -0 -0 0;
+        pointer-events: none;
+        mix-blend-mode: multiply;
+        z-index: 10;
+      }
+
+      .small-circle{
+        margin-top: 25%;
+        margin-left: 25%;
+        position: absolute;
+        width: 200;
+        height: 200;
+        background-color: #0c0a0a;
+        border-radius: 50%;
+      }
+
+
     .lg\:cursor-\[url\(\'\/images\/koroks\/Elma\.png\'\)\2c _pointer\]{cursor:url(/images/greencoins.png),pointer}
     .lg\:scroll-mt-24{scroll-margin-top:6rem}
     .lg\:flex-col{flex-direction:column}
