@@ -86,31 +86,27 @@
                             <nav class="nav lg:block" aria-label="In-page jump links">
                                 <ul class="mt-16 w-max">
                                     <li>
-                                        <a class="list group flex items-center py-3 active" href="#about"><span
+                                        <a data-menuanchor="about" class="list group flex items-center py-3 active" href="#about"><span
                                                 class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
                                                 class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span></a>
                                     </li>
                                     <li>
-                                        <a class="list group flex items-center py-3" href="#experience"><span
+                                        <a data-menuanchor="experience" class="list group flex items-center py-3" href="#experience"><span
                                                 class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
                                                 class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span></a>
                                     </li>
                                     <li>
-                                        <a class="list group flex items-center py-3" href="#projects"><span
+                                        <a data-menuanchor="projects" class="list group flex items-center py-3" href="#projects"><span
                                                 class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
                                                 class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span></a>
                                     </li>
                                     <li>
-                                        <a class="list group flex items-center py-3" href="#highlights"><span
+                                        <a data-menuanchor="highlights" class="list group flex items-center py-3" href="#highlights"><span
                                                 class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
                                                 class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Career Highlights</span></a>
                                     </li>
 
-                                    <li>
-                                        <a class="group flex items-center py-3" href="#personal"><span
-                                                class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span
-                                                class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Personal</span></a>
-                                    </li>
+                        
                                 </ul>
                             </nav>
                         </div>
@@ -159,7 +155,7 @@
                         </ul>
                     </header>
                     <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
-                        <section id="about" class=" active mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                        <section id="about" class="random active mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                             aria-label="About me">
                             <div
                                 class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -190,7 +186,7 @@
                                 </p>
                             </div>
                         </section>
-                        <section id="experience" class=" mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                        <section id="experience" class="random mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                             aria-label="Work experience">
                             <div
                                 class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -578,7 +574,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="projects" class=" mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                        <section id="projects" class="random mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                             aria-label="Selected projects">
                             <div
                                 class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -813,7 +809,7 @@
                             </div>
                         </section>
 
-                        <section id="highlights" class="list mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                        <section id="highlights" class="random list mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                         aria-label="Selected projects">
                         <div
                             class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -966,34 +962,60 @@
     </div>
  <script>
 
+        let sections = document.querySelectorAll('.random');
+        const isPageEnd = window.scrollY + window.innerHeight >= document.scrollingElement.scrollHeight;
+        window.onscroll = () => {
+            sections.forEach((section) => {
+            const { top, bottom } = section.getBoundingClientRect() 
+            const inViewport = top <= 140 && bottom >= 140
+            const id = section.getAttribute('id')
+
+            if (inViewport) {
+                document.querySelector(`[data-menuanchor="${id}"]`).classList.add('active')
+            } else {
+                document.querySelector(`[data-menuanchor="${id}"]`).classList.remove('active')
+            }
+        })
+
+        if (isPageEnd) {
+            const id = sections[sections.length - 1].getAttribute('id')
+            document.querySelector(`[data-menuanchor="${id}"]`).classList.add('active')
+        }
+        }
+
+       
+    
     
 
-let section = document.querySelectorAll('section');
-        let lists = document.querySelectorAll('list');
-        function activeLink(li) {
-            lists.forEach((item) => item.classList.remove('active'));
-            li.classList.add('active');
-        }
+        // let sections = document.querySelectorAll('.random');
+        // let lists = document.querySelectorAll('data-menuanchor');
+        // function activeLink(sec) {
+        //     lists.forEach((item) => {
+        //         console.log("hello"+sec)
+        //         item.classList.remove('active')
+        //     })
+        //     sec.classList.add('active');
+        // }
        
-        lists.forEach((item) =>
-            item.addEventListener('click', function(){
-                activeLink(this);
-            }));
+        // lists.forEach((item) =>
+        //     item.addEventListener('click', function(){
+        //         activeLink(this);
+        //     }));
 
-        window.onscroll = () => {
-            section.forEach(sec => {
-                let top = window.scrollY;
-                let offset = sec.offsetTop;
-                let height = sec.offsetHeight;
-                let id = sec.getAttribute('id');
+        // window.onscroll = () => {
+        //     sections.forEach(sec => {
+        //         let top = window.scrollY;
+        //         let offset = sec.offsetTop;
+        //         let height = sec.offsetHeight;
+        //         let id = sec.getAttribute('id');
 
-                if (top >= offset && top < offset + height) {
-                    const target = document.querySelector(`[href='#${id}']`).parentElement;
-                    activeLink(target);
+        //         if (top >= offset && top < offset + height) {
+        //             const target = document.querySelector(`[href='#${id}']`).parentElement;
+        //             activeLink(target);
 
-                }
-            })
-        }
+        //         }
+        //     })
+        // }
 
 //     $(document).ready(function() {
 //     $(document).on("scroll", onScroll);
